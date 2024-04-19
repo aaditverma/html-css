@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+  </head>
+
+  <body></body>
+
+    <script>
+      true 
+      false
+
+      console.log(3 < 5);
+      console.log(3 > 5);
+
+      console.log(typeof true);
+      console.log(typeof 'true');
+
+      console.log(5 == '5.00');
+      console.log(5 === '5.00');
+
+      console.log(3 > 5 - 5);
+
+      /*similarly we use !== not !=*/
+
+      if (true) {
+        console.log('Hello');
+      }
+      else {
+        console.log('Bye');
+      }
+      /*when true code in if runs, when false code in else runs*/
+
+      const age = 15;
+
+      if (age >= 16) {
+        console.log('You can drive');
+      }
+      else if (age >= 14){
+        console.log('Almost there');
+      }
+      else {
+        console.log('You cant drive');
+      }
+
+      if (5){
+        console.log('truthy');
+      }
+
+      /*falsy values are false 0 undefined empty strings NaN null*/
+      
+      const cartQuantity = 5;
+
+      if (cartQuantity){
+        console.log('cart has products');
+      }
+
+      console.log(!0);
+
+      console.log('text'/5);
+
+      let variable1;
+      console.log(variable1);
+
+      const result = 0 ? 'truthy' : 'falsy';
+      console.log(result);
+
+      false && console.log('hello');
+
+      const message = false && 'hello';
+      console.log(message);
+
+      const message1 = 5 && 'hello';
+      console.log(message1);
+
+      const currency = 'EUR' || 'USD';
+      console.log(currency);
+
+      const currency1 = undefined || 'USD';
+      console.log(currency1);
+
+    </script>
+  </body>
+</html>
